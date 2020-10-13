@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;800&display=swap" rel="stylesheet">
+    <title>Exercises</title>
+</head>
+<body class="container-fluid bg-dark text-light">
+    <div class="d-flex flex-column justify-content-center align-items-right my-1">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mx-3">Laura Juiz / 30 Days Of JavaScript Challenge Resolution</h4>
+            <div class="col-md-4 p-0">
+                <a href="index.html" class="mr-3 mb-1 btn btn-sm btn-success float-right">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill mr-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+                </svg>
+                Go back
+                </a>
+            </div>            
+        </div>
+        <h2 class="mx-3">Exercises</h2>
+        <div class="mx-3 mb-3 accordion" id="accordionExample">
+            <div class="card bg-secondary">
+              <div class="card-header" role="button" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0 text-white">
+                    Day 1                  
+                  </h5>
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                </div>
+              </div>          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">                
+                <div class="card-body bg-light text-muted">
+                    <h6 class="ml-3 card-subtitle mb-2 font-weight-bold">Tasks</h6>
+                    <ul>
+                        <li>Write a single line comment which says, comments can make code readable</li>
+                        <li>Write another single comment which says, Welcome to 30DaysOfJavaScript</li>
+                        <li>Write a multiline comment which says, comments can make code readable, easy to reuse and informative</li>
+                        <li>Create a variable.js file and declare variables and assign string, boolean, undefined and null data types</li>
+                        <li>Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable</li>
+                        <li>Declare four variables without assigning values</li>
+                        <li>Declare four variables with assigned values</li>
+                        <li>Declare variables to store your first name, last name, marital status, country and age in multiple lines</li>
+                        <li>Declare variables to store your first name, last name, marital status, country and age in a single line</li>
+                        <li>Declare two variables myAge and yourAge and assign them initial values and log to the browser console.</li>
+                    </ul>
+                    <hr>
+                    <div class="d-flex">                                           
+                      <div class="col-7">
+                        <h6 class="card-subtitle mb-2 font-weight-bold">Resolution</h6> 
+                        <code class="text-dark">
+                          <span class="text-success">// Comments can make code readable <br>
+                          // Welcome to 30DaysOfJavaScript<br>
+                          /* comments can make code readable,<br>
+                            easy to reuse and informative. */<br></span>
+                          <span class="text-danger">let</span> <span class='text-primary'>myName</span><span class='text-danger'> = 'Laura'</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>isDev</span><span class='text-danger'> = </span>true;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>isMusician</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>electricGuitar</span><span class='text-danger'> = </span>null;<br>
+                          console.log(<span class="text-danger">typeof</span> myName);<span class="text-success"> // string</span><br>
+                          console.log(<span class="text-danger">typeof</span> isDev);<span class="text-success"> // boolean</span><br>
+                          console.log(<span class="text-danger">typeof</span> isMusician);<span class="text-success"> // undefined</span><br>
+                          console.log(<span class="text-danger">typeof</span> electricGuitar);<span class="text-success"> // object</span><br>
+                          <span class="text-danger">let</span> <span class='text-primary'>noValueOne</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>noValueTwo</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>noValueThree</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>noValueFour</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>valueOne</span><span class='text-danger'> = </span><span class='text-danger'>'one'</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>valueTwo</span><span class='text-danger'> = </span><span class='text-primary'>1</span><span class='text-danger'>+</span><span class='text-primary'>1</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>valueThree</span><span class='text-danger'> = </span><span class='text-primary'>3</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>valueFout</span><span class='text-danger'> = </span><span class='text-danger'>'IV'</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>fistName</span><span class='text-danger'> = </span><span class='text-danger'>'Laura'</span>, <span class='text-primary'>lastName</span><span class='text-danger'> = </span><span class='text-danger'>'Juiz'</span>, <span class='text-primary'>maritalStatus</span><span class='text-danger'> = </span><span class='text-danger'>'Single'</span>, <span class='text-primary'>country</span><span class='text-danger'> = </span><span class='text-danger'>'Argentina'</span>, <span class='text-primary'>age</span><span class='text-danger'> = </span><span class='text-primary'>30</span>;<br>
+                          <span class="text-danger">let</span> <span class='text-primary'>myAge</span><span class='text-danger'> = 'I am 30 years old.'</span>, <span class='text-primary'>yourAge</span><span class='text-danger'> = </span><span class='text-danger'>'You are 20 years old.'</span>;<br>
+                          console.log(myAge);<span class="text-success"> // I am 30 years old.</span><br>
+                          console.log(yourAge);<span class="text-success"> // You are 20 years old.<br>
+                        </code>
+                      </div>
+                      <div class="col-5 bg-white border text-secondary p-3" style="height: fit-content">
+                        <div class="float-right" style="border-left: 10px solid white;">
+                          <button onclick=executeConsole() class="btn btn-sm btn-primary">Try out!</button>
+                        </div>
+                        <div id='consoleOne'>
+                          <ul class="consoleText text-primary font-weight-bold">
+                            <li>></li>
+                          </ul>                           
+                        </div>                          
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white">
+                <div class="card-header bg-white collapsed" id="headingTwo" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0 text-secondary">
+                      Day 2                  
+                    </h5>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body bg-light text-muted">
+                    <table class="table table-sm table-striped">
+                      <thead>
+                        <tr class="font-weight-bold text-center table-secondary text-secondary">
+                          <td colspan="2" style="border-top: 0px;">Level 1</td>
+                        </tr>
+                        <tr  class="font-weight-bold text-center text-secondary">
+                          <td>Task</td>
+                          <td>Resolution</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.</td>
+                          <td>let challenge = '30 Days Of JavaScript';</td>
+                        </tr>
+                        <tr>
+                          <td>Print the string on the browser console using console.log()</td>
+                          <td>console.log(challenge);</td>
+                        </tr>
+                        <tr>
+                          <td>Change all the string characters to capital letters using toUpperCase() method</td>
+                          <td>console.log(challenge.toUpperCase());</td>
+                        </tr>
+                        <tr>
+                          <td>Change all the string characters to lowercase letters using toLowerCase() method</td>
+                          <td>console.log(challenge.toLowerCase());</td>
+                        </tr>
+                        <tr>
+                          <td>Cut (slice) out the first word of the string using substr() or substring() method</td>
+                          <td>console.log(challenge.substr(3,4));</td>
+                        </tr>
+                        <tr>
+                          <td>Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.</td>
+                          <td>console.log(challenge.substring(3));</td>
+                        </tr>
+                        <tr>
+                          <td>Check if the string contains a word Script using includes() method</td>
+                          <td>challenge.includes('Script');</td>
+                        </tr>
+                        <tr>
+                          <td>Split the string into an array using split() method</td>
+                          <td>challenge.split();</td>
+                        </tr>
+                        <tr>
+                          <td>Split the string 30 Days Of JavaScript at the space using split() method</td>
+                          <td>challenge.split(' ');</td>
+                        </tr>
+                        <tr>
+                          <td>'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.</td>
+                          <td>('Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon').split(', ');</td>
+                        </tr>
+                        <tr>
+                          <td>Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.</td>
+                          <td>console.log(challenge.replace('JavaScript','Python'));</td>
+                        </tr>
+                        <tr>
+                          <td>What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.</td>
+                          <td>console.log(challenge.charAt(15));</td>
+                        </tr>
+                        <tr>
+                          <td>Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript</td>
+                          <td>console.log(challenge.indexOf('a'));</td>
+                        </tr>
+                        <tr>
+                          <td>Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.</td>
+                          <td>console.log(challenge.lastIndexOf('a'));</td>
+                        </tr>
+                        <tr>
+                          <td>Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
+                          <td>('You cannot end a sentence with because because because is a conjunction').indexOf('because');</td>
+                        </tr>
+                        <tr>
+                          <td>Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
+                          <td>('You cannot end a sentence with because because because is a conjunction').lastIndexOf('because');</td>
+                        </tr>
+                        <tr>
+                          <td>Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
+                          <td>('You cannot end a sentence with because because because is a conjunction').search('because');</td>
+                        </tr>
+                        <tr>
+                          <td>Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.</td>
+                          <td>' 30 Days Of JavaScript '.trim();</td>
+                        </tr>
+                        <tr>
+                          <td>Use startsWith() method with the string 30 Days Of JavaScript and make the result true</td>
+                          <td>('30 Days Of JavaScript').startsWith('3');</td>
+                        </tr>
+                        <tr>
+                          <td>Use endsWith() method with the string 30 Days Of JavaScript and make the result true</td>
+                          <td>('30 Days Of JavaScript').endsWith('t');</td>
+                        </tr>
+                        <tr>
+                          <td>Use match() method to find all the a's in 30 Days Of JavaScript</td>
+                          <td>('30 Days Of JavaScript').match(/a/g);</td>
+                        </tr>
+                        <tr>
+                          <td>Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'</td>
+                          <td>console.log(('30 Days Of ').concat('JavaScript'));</td>
+                        </tr>
+                        <tr>
+                          <td>Use repeat() method to print 30 Days Of JavaScript 2 times</td>
+                          <td>console.log(('30 Days Of Javascript').repeat(2));</td>
+                        </tr>
+                        <tr class="font-weight-bold text-center text-secondary">
+                          <td colspan="2" style="border-top: 0px;">Level 2</td>
+                        </tr>
+                        <tr  class="font-weight-bold text-center text-secondary">
+                          <td>Task</td>
+                          <td>Resolution</td>
+                        </tr>
+                        <tr>
+                          <td>Using console.log() print out the following statement:<br>The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.</td>
+                          <td>console.log(`The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.`);</td>
+                        </tr>  
+                        <tr>
+                          <td>Using console.log() print out the following quote by Mother Teresa:<br>"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."</td>
+                          <td>console.log(`"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."`);</td>
+                        </tr>  
+                        <tr>
+                          <td>Check if typeof '10' is exactly equal to 10. If not make it exactly equal.</td>
+                          <td></td>
+                        </tr>   
+                        <tr>
+                          <td>Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Check if 'on' is found in both python and jargon</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td><span class="font-italic">I hope this course is not full of jargon.</span> Check if jargon is in the sentence.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Generate a random number between 0 and 100 inclusively.</td>
+                          <td>let randomNum = Math.random() // random from 0 to 0.99<br>
+                            let numBtnZeroAndOneHundred = (Math.random()) * 101 // min 0 max 100.99<br>
+                            console.log(Math.floor(numBtnZeroAndOneHundred));</td>
+                        </tr>
+                        <tr>
+                          <td>Generate a random number between 50 and 100 inclusively.</td>
+                          <td>console.log(Math.floor(Math.random() * (101 - 50)) + 50);</td>
+                        </tr>
+                        <tr>
+                          <td>Generate a random number between 0 and 255 inclusively.</td>
+                          <td>console.log(Math.floor(Math.random() * 256));</td>
+                        </tr>     
+                        <tr>
+                          <td>Access the 'JavaScript' string characters using a random number.</td>
+                          <td></td>
+                        </tr> 
+                        <tr>
+                          <td>
+                            Use console.log() and escape characters to print the following pattern.
+                            <div style="color: blue; background-color: #ffffd8; padding: 0 9px; width: fit-content;">
+                              <span><span class="pl-c1">1</span> <span class="pl-c1">1</span> <span class="pl-c1">1</span> <span class="pl-c1">1</span> <span class="pl-c1">1</span></span><br>
+                              <span><span class="pl-c1">2</span> <span class="pl-c1">1</span> <span class="pl-c1">2</span> <span class="pl-c1">4</span> <span class="pl-c1">8</span></span><br>
+                              <span><span class="pl-c1">3</span> <span class="pl-c1">1</span> <span class="pl-c1">3</span> <span class="pl-c1">9</span> <span class="pl-c1">27</span></span><br>
+                              <span><span class="pl-c1">4</span> <span class="pl-c1">1</span> <span class="pl-c1">4</span> <span class="pl-c1">16</span> <span class="pl-c1">64</span></span><br>
+                              <span><span class="pl-c1">5</span> <span class="pl-c1">1</span> <span class="pl-c1">5</span> <span class="pl-c1">25</span> <span class="pl-c1">125</span></span>
+                          </div>
+                          </td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
+                          <td></td>
+                        </tr>
+                        <tr class="font-weight-bold text-center text-secondary">
+                          <td colspan="2" style="border-top: 0px;">Level 3</td>
+                        </tr>
+                        <tr  class="font-weight-bold text-center text-secondary">
+                          <td>Task</td>
+                          <td>Resolution</td>
+                        </tr>
+                        <tr>
+                          <td>'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Clean the following text and find the most frequent word (hint, use replace and regular expressions).<br>
+                            <div style="background-color: #ffffd8; padding: 0 9px; width: fit-content;">
+                              <span style="color: #d40048;">const</span> sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+                            </div>
+                          </td>
+                          <td>
+                            const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';<br>
+                            let cleanSentence = sentence.replace(/%|#|@|&|;|\$/g,'');<br>
+                            cleanSentence = cleanSentence.toLowerCase();<br>
+                            function Change (words) {<br>
+                              var wordCounts = { };<br>
+                              var words = words.split(/\b/);<br>                    
+                              for(var i = 0; i < words.length; i++)<br>
+                              wordCounts[words[i]] = (wordCounts[words[i]] || 0) + 1;<br>
+                              console.log(wordCounts);<br>
+                            }<br>
+                            Change(cleanSentence);
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr>
+                    <div class="d-flex">                                           
+                      <div class="col-7">
+                        <h6 class="card-subtitle mb-2 font-weight-bold">Resolution</h6> 
+                        <code class="text-dark">
+                          <span>let challenge = '30 Days Of JavaScript';<br></span>
+                          <span>console.log(challenge);<br></span>
+                          <span>console.log(challenge.length);<br></span>
+                          <span>console.log(challenge.toUpperCase());<br></span>
+                          <span>console.log(challenge.toLowerCase());<br></span>
+                          <span>console.log(challenge.substr(3,4));<br></span>
+                          <span>console.log(challenge.substring(3));<br></span>
+                          <span>console.log(challenge.includes('Script'));<br></span>
+                          <span>console.log(challenge.split());<br></span>
+                          <span>console.log(challenge.split(' '));<br></span>
+                          <span>console.log(('Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon').split(', '));<br></span>
+                          <span>console.log(challenge.replace('JavaScript','Python'));<br></span>
+                          <span>console.log(challenge.charAt(15));<br></span>
+                          <span>console.log(challenge.indexOf('a'));<br></span>
+                          <span>console.log(challenge.lastIndexOf('a'));<br></span>
+                          <span>console.log(('You cannot end a sentence with because because because is a conjunction').indexOf('because'));<br></span>
+                          <span>console.log(('You cannot end a sentence with because because because is a conjunction').lastIndexOf('because'));<br></span>
+                          <span>console.log(('You cannot end a sentence with because because because is a conjunction').search('because'));<br></span>
+                          <span>console.log(' 30 Days Of JavaScript '.trim());<br></span>
+                          <span>console.log(('30 Days Of JavaScript').startsWith('3'));<br></span>
+                          <span>console.log(('30 Days Of JavaScript').endsWith('t'));<br></span>
+                          <span>console.log(('30 Days Of JavaScript').match(/a/g));<br></span>
+                          <span>console.log(('30 Days Of ').concat('JavaScript'));<br></span>
+                          <span>console.log(('30 Days Of Javascript').repeat(2));<br></span>
+                        </code>
+                      </div>
+                      <div class="col-5 bg-white border text-secondary p-3" style="height: fit-content">
+                        <div class="float-right" style="border-left: 10px solid white;">
+                          <button onclick=executeConsoleTwo() class="btn btn-sm btn-primary">Try out!</button>
+                        </div>
+                        <div id='consoleTwo'>
+                          <ul class="consoleText text-primary font-weight-bold">
+                            <li>></li>
+                          </ul>                           
+                        </div>                          
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="card bg-secondary">
+                <div class="card-header collapsed" id="headingThree" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0 text-white">
+                      Day 3                  
+                    </h5>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body bg-light text-muted">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="introduction.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
