@@ -227,19 +227,19 @@
                         </tr>  
                         <tr>
                           <td>Check if typeof '10' is exactly equal to 10. If not make it exactly equal.</td>
-                          <td></td>
+                          <td>console.log(typeof(parseInt('10')) == typeof(10));</td>
                         </tr>   
                         <tr>
                           <td>Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.</td>
-                          <td></td>
+                          <td>console.log(Math.ceil(parseFloat('9.8')) == 10);</td>
                         </tr>
                         <tr>
                           <td>Check if 'on' is found in both python and jargon</td>
-                          <td></td>
+                          <td>console.log('python'.includes('on') == 'jargon'.includes('on'));</td>
                         </tr>
                         <tr>
                           <td><span class="font-italic">I hope this course is not full of jargon.</span> Check if jargon is in the sentence.</td>
-                          <td></td>
+                          <td>console.log('I hope this course is not full of jargon.'.includes('jargon'));</td>
                         </tr>
                         <tr>
                           <td>Generate a random number between 0 and 100 inclusively.</td>
@@ -257,7 +257,7 @@
                         </tr>     
                         <tr>
                           <td>Access the 'JavaScript' string characters using a random number.</td>
-                          <td></td>
+                          <td>console.log('JavaScript'[Math.floor(Math.random() * 10)])</td>
                         </tr> 
                         <tr>
                           <td>
@@ -268,13 +268,14 @@
                               <span><span class="pl-c1">3</span> <span class="pl-c1">1</span> <span class="pl-c1">3</span> <span class="pl-c1">9</span> <span class="pl-c1">27</span></span><br>
                               <span><span class="pl-c1">4</span> <span class="pl-c1">1</span> <span class="pl-c1">4</span> <span class="pl-c1">16</span> <span class="pl-c1">64</span></span><br>
                               <span><span class="pl-c1">5</span> <span class="pl-c1">1</span> <span class="pl-c1">5</span> <span class="pl-c1">25</span> <span class="pl-c1">125</span></span>
-                          </div>
+                            </div>
                           </td>
-                          <td></td>
+                          <td>console.log(`1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125`);</td>
                         </tr>
                         <tr>
-                          <td>Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
-                          <td></td>
+                          <td>Use substr to slice out the phrase because because because from the following sentence:<br>'You cannot end a sentence with because because because is a conjunction'</td>
+                          <td>let sentence = 'You cannot end a sentence with because because because is a conjunction';<br>
+                            console.log(sentence.substr(sentence.indexOf('b'), 'because because because'.length));</td>
                         </tr>
                         <tr class="font-weight-bold text-center text-secondary">
                           <td colspan="2" style="border-top: 0px;">Level 3</td>
@@ -284,12 +285,14 @@
                           <td>Resolution</td>
                         </tr>
                         <tr>
-                          <td>'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.</td>
-                          <td></td>
+                          <td>'Love is the best thing in this world. Some found their love and some are still looking for their love.'<br>Count the number of word love in this sentence.</td>
+                          <td>let sentence = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';<br>
+                            console.log((sentence.match(/love/gi)).length);</td>
                         </tr>
                         <tr>
                           <td>Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'</td>
-                          <td></td>
+                          <td>let sentence = 'You cannot end a sentence with because because because is a conjunction';<br>
+                            console.log((sentence.match(/because/g)).length);</td>
                         </tr>
                         <tr>
                           <td>
@@ -311,6 +314,12 @@
                             }<br>
                             Change(cleanSentence);
                           </td>
+                        </tr>
+                        <tr>
+                          <td>Calculate the total annual income of the person by extracting the numbers from the following text.<br>'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'</td>
+                          <td>let sentence = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'<br>
+                            let numbers = sentence.match(/\d+/g);<br>
+                            console.log((parseInt(numbers[0]) * 12) + parseInt(numbers[1]) + (parseInt(numbers[2]) * 12));</td>
                         </tr>
                       </tbody>
                     </table>
